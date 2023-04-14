@@ -25,7 +25,7 @@ custom_greeting("adrian")
 
 # 3: Write a method named greet_person that takes in 3 strings, a first, middle, and last name, and returns a sentence with the full name.
 
-ef greet_person(first, middle, last)
+def greet_person(first, middle, last)
   "greetings #{first} is #{first} #{middle} #{last} your correct full name?"
 end
 greet_person("adrian", "T", "roussev")
@@ -51,17 +51,17 @@ def square(n)
 # 5: Write a method named check_stock that satisfies the following interaction pattern:
 # Hint: You will only write one check_stock method that checks the quantity and then prints the corresponding statement.
 
-check_stock(4, "Coffee");
-# => "Coffee is stocked"
+# check_stock(4, "Coffee");
+# # => "Coffee is stocked"
 
-check_stock(3, "Tortillas");
-# => "Tortillas - running LOW"
+# check_stock(3, "Tortillas");
+# # => "Tortillas - running LOW"
 
-check_stock(0, "Cheese");
-# => "Cheese - OUT of stock!"
+# check_stock(0, "Cheese");
+# # => "Cheese - OUT of stock!"
 
-check_stock(1, "Salsa");
-# => "Salsa - running LOW"
+# check_stock(1, "Salsa");
+# # => "Salsa - running LOW"
 
 def check_stock(n, item)
     if n>=4
